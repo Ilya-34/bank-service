@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:banktest;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH;DB_CLOSE_DELAY=-1;LOCK_TIMEOUT=20000
+    username: sa
+    password: ""
+    hikari:
+      maximum-pool-size: 24

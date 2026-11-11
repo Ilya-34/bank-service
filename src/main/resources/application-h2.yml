@@ -1,0 +1,6 @@
+# In-memory H2 in PostgreSQL mode. Data is lost on restart. Local demo only.
+spring:
+  datasource:
+    url: jdbc:h2:mem:bank;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH;DB_CLOSE_DELAY=-1;LOCK_TIMEOUT=10000
+    username: sa
+    password: ""

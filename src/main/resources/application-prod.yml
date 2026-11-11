@@ -1,0 +1,12 @@
+# Same PostgreSQL setup, but nothing has a default: the app refuses to start without real settings.
+# (Still a demo project, see "Scope" in the README.)
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+springdoc:
+  swagger-ui:
+    enabled: ${SWAGGER_ENABLED:false}
+  api-docs:
+    enabled: ${SWAGGER_ENABLED:false}
